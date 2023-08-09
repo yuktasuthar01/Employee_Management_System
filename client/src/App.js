@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import axios from "axios"; // Make sure to import axios from the correct package (check your package.json)
+import axios from "axios"; 
 import { v4 as uuidv4 } from "uuid";
+
 
 function App() {
   const [name, setName] = useState("");
@@ -14,11 +15,11 @@ function App() {
 
   useEffect(() => {
     getEmployees();
-  }, []); // Fetch employees when the component mounts
-
+  }, []); 
+  
   const addEmployee = () => {
     axios
-      .post("http://localhost:5000/create", {
+      .post(`${process.env.REACT_APP_API}/create`, {
         name: name,
         age: age,
         country: country,
@@ -44,8 +45,9 @@ function App() {
   };
 
   const getEmployees = () => {
+    axios.get('/employees')
     axios
-      .get("http://localhost:5000/employees")
+      .get(`${process.env.REACT_APP_API}/employees`)
       .then((response) => {
         setEmployeeList(response.data);
       })

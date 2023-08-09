@@ -3,7 +3,7 @@ const app = express();
 const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-require("dotenv").config(); 
+
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -27,8 +27,6 @@ async function connectToMongo() {
     console.error("⚠️ Error connecting to MongoDB:", err);
   }
 }
-
-
 
 connectToMongo();
 
