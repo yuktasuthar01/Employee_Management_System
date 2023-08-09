@@ -21,15 +21,16 @@ This is a Full Stack Application .
 
 ![](images/frontend.png)
 
-<h4>Insert-the-data</h4>
+<h3>Insert the data</h3>
 
 ![](images/Insert-the-data.png)
 
-<h4>After adding the data</h4>
+
+<h3>After adding the data</h3>
 
 ![](images/After-adding-data.png)
 
-<h4>Database  Entry </h4>
+<h3>Database  Entry </h3>
 
 ![](images/database.png)
 
