@@ -1,4 +1,4 @@
 # Employee Management System
-This is a Full Stack CRUD Application for DBMS subject project.
+This is a Full Stack Application .
 
-Developed by Kushagra Gupta and Ishan Sethi
+Developed by Yukta
